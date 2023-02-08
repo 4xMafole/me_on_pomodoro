@@ -31,5 +31,5 @@
             "type": "String",
             "example": "05:00",
         }
-    },
+    }
 }
