@@ -1,0 +1,35 @@
+{
+    "@@locale": "en",
+    "counterAppBarTitle": "Counter",
+    "@counterAppBarTitle": {
+        "description": "Text shown in the AppBar of the Counter Page"
+    },
+    "resetText": "Reset",
+    "@resetText": {
+        "description": "Text shown to reset time"
+    },
+    "pomodoroBreakText": "pomodoro {time} mins",
+    "@pomodoroBreakText": {
+        "description": "Text shown in the pomodoro focus time",
+        "time": {
+            "type": "String",
+            "example": "25:00",
+        }
+    },
+    "shortBreakText": "short break {time} mins",
+    "@shortBreakText": {
+        "description": "Text shown in the short break time",
+        "time": {
+            "type": "String",
+            "example": "05:00",
+        }
+    },
+    "shortBreakText": "short break {time} mins",
+    "@shortBreakText": {
+        "description": "Text shown in the short break time",
+        "time": {
+            "type": "String",
+            "example": "05:00",
+        }
+    },
+}
