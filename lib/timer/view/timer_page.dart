@@ -27,14 +27,14 @@ class _TimerPageState extends State<TimerPage>
 
   @override
   Widget build(BuildContext context) {
-    return CounterView(
+    return TimerView(
       timerController: _timerController,
     );
   }
 }
 
-class CounterView extends StatelessWidget {
-  const CounterView({
+class TimerView extends StatelessWidget {
+  const TimerView({
     super.key,
     required CustomTimerController timerController,
   }) : _timerController = timerController;
@@ -43,9 +43,8 @@ class CounterView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final l10n = context.l10n;
+    // final l10n = context.l10n;
     return Scaffold(
-      appBar: AppBar(title: Text(l10n.counterAppBarTitle)),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -123,12 +122,12 @@ class TimerBreakText extends StatelessWidget {
           return AnimatedCrossFade(
             firstChild: Text('pomodoro ${state.time} mins'),
             secondChild: state.timerBreak == TimerBreak.short
-                ? Text('break ${state.time} mins')
-                : Text('long ${state.time} mins'),
+                ? Text('short break ${state.time} mins')
+                : Text('long break ${state.time} mins'),
             crossFadeState: state.timerBreak == TimerBreak.pomodoro
                 ? CrossFadeState.showFirst
                 : CrossFadeState.showSecond,
-            duration: const Duration(milliseconds: 300),
+            duration: const Duration(milliseconds: 400),
           );
         },
       ),

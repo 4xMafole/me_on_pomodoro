@@ -13,7 +13,7 @@
         "description": "Text shown in the pomodoro focus time",
         "time": {
             "type": "String",
-            "example": "25:00",
+            "example": "25:00"
         }
     },
     "shortBreakText": "short break {time} mins",
@@ -21,7 +21,7 @@
         "description": "Text shown in the short break time",
         "time": {
             "type": "String",
-            "example": "05:00",
+            "example": "05:00"
         }
     },
     "shortBreakText": "short break {time} mins",
@@ -29,7 +29,7 @@
         "description": "Text shown in the short break time",
         "time": {
             "type": "String",
-            "example": "05:00",
+            "example": "05:00"
         }
     }
 }
