@@ -1,7 +1,6 @@
 import 'package:custom_timer/custom_timer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:pomodoro/l10n/l10n.dart';
 import 'package:pomodoro/timer/timer.dart';
 
 class TimerPage extends StatefulWidget {
