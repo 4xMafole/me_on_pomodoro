@@ -1,5 +1,4 @@
 import 'package:bloc_test/bloc_test.dart';
-import 'package:custom_timer/custom_timer.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:pomodoro/timer/timer.dart';
 
