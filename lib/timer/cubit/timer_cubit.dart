@@ -9,11 +9,26 @@ class TimerCubit extends Cubit<TimerState> {
 
   void timerBreak() {
     if (state.timerBreak == TimerBreak.pomodoro) {
-      emit(state.copyWith(timerBreak: TimerBreak.short, time: 5,),);
+      emit(
+        state.copyWith(
+          timerBreak: TimerBreak.short,
+          time: 5,
+        ),
+      );
     } else if (state.timerBreak == TimerBreak.short) {
-      emit(state.copyWith(timerBreak: TimerBreak.long, time: 15,),);
+      emit(
+        state.copyWith(
+          timerBreak: TimerBreak.long,
+          time: 15,
+        ),
+      );
     } else {
-      emit(state.copyWith(timerBreak: TimerBreak.pomodoro, time: 25,),);
+      emit(
+        state.copyWith(
+          timerBreak: TimerBreak.pomodoro,
+          time: 25,
+        ),
+      );
     }
   }
 }

@@ -3,27 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pomodoro/timer/timer.dart';
 
-class TimerText extends StatefulWidget {
+class TimerText extends StatelessWidget {
   const TimerText({
     super.key,
+    required this.controller,
   });
 
-  @override
-  State<TimerText> createState() => _TimerTextState();
-}
-
-class _TimerTextState extends State<TimerText>
-    with SingleTickerProviderStateMixin {
-  late CustomTimerController _timerController;
-  @override
-  void initState() {
-    _timerController = CustomTimerController(
-      vsync: this,
-      begin: Duration(minutes: context.read<TimerCubit>().state.time),
-      end: Duration.zero,
-    );
-    super.initState();
-  }
+  final CustomTimerController controller;
 
   @override
   Widget build(BuildContext context) {
@@ -31,18 +17,17 @@ class _TimerTextState extends State<TimerText>
 
     return BlocBuilder<TimerCubit, TimerState>(
       builder: (context, state) {
-        _timerController
+        controller
           ..begin = Duration(minutes: state.time)
           ..reset();
         return CustomTimer(
-          controller: _timerController,
+          controller: controller,
           builder: (state, time) {
             return GestureDetector(
-              onTap: () =>
-                  _timerController.state.value == CustomTimerState.counting
-                      ? _timerController.pause()
-                      : _timerController.start(),
-              onDoubleTap: _timerController.reset,
+              onTap: () => controller.state.value == CustomTimerState.counting
+                  ? controller.pause()
+                  : controller.start(),
+              onDoubleTap: controller.reset,
               child: Text(
                 '${time.minutes}:${time.seconds}',
                 style: theme.textTheme.headlineMedium!.copyWith(
