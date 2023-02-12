@@ -20,10 +20,7 @@ class App extends StatelessWidget {
       ),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: BlocProvider(
-        create: (_) => TimerCubit(),
-        child: const TimerPage(),
-      ),
+      home: const TimerPage(),
     );
   }
 }

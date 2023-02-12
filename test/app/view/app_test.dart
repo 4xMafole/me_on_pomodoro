@@ -4,7 +4,7 @@ import 'package:pomodoro/timer/timer.dart';
 
 void main() {
   group('App', () {
-    testWidgets('renders CounterPage', (tester) async {
+    testWidgets('renders TimerPage', (tester) async {
       await tester.pumpWidget(const App());
       expect(find.byType(TimerPage), findsOneWidget);
     });
