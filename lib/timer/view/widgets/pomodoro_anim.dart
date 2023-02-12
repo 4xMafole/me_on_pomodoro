@@ -15,7 +15,7 @@ class PomodoroAnim extends StatefulWidget {
 
 class _PomodoroAnimState extends State<PomodoroAnim> {
   late rive.Artboard? _pomodoro;
-  late rive.StateMachineController? _pomodoro1Controller;
+  // late rive.StateMachineController? _pomodoro1Controller;
   late rive.SMIInput<bool>? _isBreak;
 
   @override
