@@ -8,6 +8,7 @@ class TimerView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     // final l10n = context.l10n;
     return Scaffold(
       backgroundColor: Colors.transparent,
@@ -17,16 +18,16 @@ class TimerView extends StatelessWidget {
           children: [
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                PomodoroAnim(),
+              children: [
+                const PomodoroAnim(),
                 SizedBox(
-                  height: 24,
+                  height: size.height * (2.4 / 100),
                 ),
-                TimerText(),
+                const TimerText(),
                 SizedBox(
-                  height: 20,
+                  height: size.height * (2 / 100),
                 ),
-                TimerBreakText(
+                const TimerBreakText(
                   key: Key('timerBreak_text'),
                 ),
               ],

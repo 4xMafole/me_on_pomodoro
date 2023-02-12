@@ -11,8 +11,8 @@ class PomodoroAnim extends StatefulWidget {
 
 class _PomodoroAnimState extends State<PomodoroAnim> {
   late rive.Artboard? _pomodoro;
-  late rive.StateMachineController? _pomodoro1Controller;
-  late rive.SMIInput<bool>? _isBreak;
+  // late rive.StateMachineController? _pomodoro1Controller;
+  // late rive.SMIInput<bool>? _isBreak;
 
   @override
   void initState() {
@@ -20,13 +20,13 @@ class _PomodoroAnimState extends State<PomodoroAnim> {
     rootBundle.load('assets/pomodoro.riv').then((data) async {
       final file = rive.RiveFile.import(data);
       final artboard = file.mainArtboard;
-      var pomodoro1Controller = rive.StateMachineController.fromArtboard(
+      final pomodoro1Controller = rive.StateMachineController.fromArtboard(
         artboard,
         'pomodoro 1',
       );
       if (pomodoro1Controller != null) {
         artboard.addController(pomodoro1Controller);
-        _isBreak = pomodoro1Controller.findInput('break');
+        // _isBreak = pomodoro1Controller.findInput('break');
 
         setState(() {
           _pomodoro = artboard;
