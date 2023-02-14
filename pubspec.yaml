@@ -14,9 +14,10 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.2
-  flutter_launcher_icons: ^0.11.0
+  # flutter_launcher_icons: ^0.11.0
   flutter_localizations:
     sdk: flutter
+  flutter_native_splash: ^2.2.17
   intl: ^0.17.0
   rive: ^0.10.1
 
@@ -36,6 +37,11 @@ flutter_icons:
     generate: true
     image_path: "assets/logo.png"
     background_color: "#ffffff"
+
+flutter_native_splash:
+  color: "#37474F"
+  image: "assets/logo.png"
+  branding: "assets/brand.png"
 
 flutter:
   uses-material-design: true
