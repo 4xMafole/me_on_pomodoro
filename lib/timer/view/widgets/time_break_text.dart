@@ -1,3 +1,4 @@
+import 'package:custom_timer/custom_timer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pomodoro/timer/timer.dart';
@@ -5,12 +6,17 @@ import 'package:pomodoro/timer/timer.dart';
 class TimerBreakText extends StatelessWidget {
   const TimerBreakText({
     super.key,
+    required this.timerController,
   });
+
+  final CustomTimerController timerController;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => context.read<TimerCubit>().timerBreak(),
+      onTap: () => context.read<TimerCubit>().timerBreak(
+            timerController: timerController,
+          ),
       child: BlocBuilder<TimerCubit, TimerState>(
         builder: (context, state) {
           return AnimatedCrossFade(

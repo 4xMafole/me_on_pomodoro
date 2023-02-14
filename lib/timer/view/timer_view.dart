@@ -47,8 +47,9 @@ class _TimerViewState extends State<TimerView>
                 SizedBox(
                   height: size.height * (2 / 100),
                 ),
-                const TimerBreakText(
-                  key: Key('timerBreak_text'),
+                TimerBreakText(
+                  key: const Key('timerBreak_text'),
+                  timerController: _timerController,
                 ),
               ],
             ),

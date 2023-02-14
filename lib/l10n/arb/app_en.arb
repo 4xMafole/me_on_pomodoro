@@ -24,12 +24,12 @@
             "example": "05:00"
         }
     },
-    "shortBreakText": "short break {time} mins",
-    "@shortBreakText": {
-        "description": "Text shown in the short break time",
+    "longBreakText": "long break {time} mins",
+    "@longBreakText": {
+        "description": "Text shown in the long break time",
         "time": {
             "type": "String",
-            "example": "05:00"
+            "example": "15:00"
         }
     }
 }

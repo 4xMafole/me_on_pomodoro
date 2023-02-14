@@ -7,10 +7,11 @@ part 'timer_state.dart';
 class TimerCubit extends Cubit<TimerState> {
   TimerCubit() : super(const TimerState());
 
-  void timerBreak() {
+  void timerBreak({required CustomTimerController timerController}) {
     if (state.timerBreak == TimerBreak.pomodoro) {
       emit(
         state.copyWith(
+          timerState: timerController.state.value,
           timerBreak: TimerBreak.short,
           time: 5,
         ),
@@ -18,6 +19,7 @@ class TimerCubit extends Cubit<TimerState> {
     } else if (state.timerBreak == TimerBreak.short) {
       emit(
         state.copyWith(
+          timerState: timerController.state.value,
           timerBreak: TimerBreak.long,
           time: 15,
         ),
@@ -25,6 +27,7 @@ class TimerCubit extends Cubit<TimerState> {
     } else {
       emit(
         state.copyWith(
+          timerState: timerController.state.value,
           timerBreak: TimerBreak.pomodoro,
           time: 25,
         ),
