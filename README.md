@@ -1,3 +1,7 @@
+![coverage][coverage_badge]
+[![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
+[![License: MIT][license_badge]][license_link]
+<hr>
 <h1 align="center">Me On Pomodoro</h1>
 
 <p align="center">
@@ -10,24 +14,10 @@
     ·
     <a href="https://github.com/4xMafole/me_on_pomodoro/issues/new">Request Feature</a>
 </p>
-<hr></hr>
+<br>
 
-![coverage][coverage_badge]
-[![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
-[![License: MIT][license_badge]][license_link]
 
-<hr></hr>
-
-<!-- ![GitHub Actions][github_actions_badge]
-![Canva][canva_badge]
-![Flutter][flutter_badge]
-![Visual Studio Code][visual_studio_code_badge]
-![Dart][dart_badge] -->
-[![Upwork][upwork_badge]][upwork_link]
-
----
-
-Struggling with staying focused and getting work done? Try the Me On Pomodoro app and experience the power of the Pomodoro Technique!
+### Struggling with staying focused and getting work done? Try the Me On Pomodoro app and experience the power of the Pomodoro Technique!
 
 ---
 
