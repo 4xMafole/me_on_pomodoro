@@ -6,8 +6,6 @@
  
  <p align="center"><b>Stay Focused and Get Things Done!✨ <br></b> Made with<br> <a href="https://solana.com/">Flutter</a> Framework
 <br><br>
-    <a href="assets/demo/demo.mp4">View Demo</a>
-    ·
     <a href="https://github.com/4xMafole/me_on_pomodoro/issues/new">Report Bug</a>
     ·
     <a href="https://github.com/4xMafole/me_on_pomodoro/issues/new">Request Feature</a>
@@ -32,6 +30,9 @@
 Struggling with staying focused and getting work done? Try the Me On Pomodoro app and experience the power of the Pomodoro Technique!
 
 ---
+
+## Demo
+   <video src='assets/demo/demo.mp4' width=180/></video>
 
 ## Getting Started 🚀
 
