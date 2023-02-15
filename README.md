@@ -32,7 +32,7 @@ Struggling with staying focused and getting work done? Try the Me On Pomodoro ap
 ---
 
 ## Demo
-   <video src='assets/demo/demo.mp4' width=180/></video>
+https://user-images.githubusercontent.com/19847904/218891783-2a590486-93bd-4721-a90f-05bf4338bb1f.mp4
 
 ## Getting Started 🚀
 
